@@ -36,9 +36,6 @@ function createCarousel() {
     image.classList.add(imageSource[i].display);
     image.setAttribute("src", imageSource[i].src);
     image.setAttribute("alt", imageSource[i].alt);
-    image.addEventListener("click", (e) => {
-      console.log(e.target);
-    });
     carousel.appendChild(imageContainer);
     imageContainer.appendChild(image);
   }
@@ -102,4 +99,11 @@ function clickDot() {
     });
     dotsContainer.appendChild(dot);
   }
+}
+
+for (let i = 0; i < 100; i++) {
+  setTimeout(() => {
+    const auto = document.getElementById("auto");
+    auto?.click(); // optional chaining in case it's null
+  }, i * 5000);
 }

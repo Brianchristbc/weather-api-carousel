@@ -18,10 +18,14 @@ img {
   height: 20rem;
   width: 100vw;
   object-fit: cover;
+  transition: opacity 0.5s ease;
+  opacity: 1;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
 }
 
 .navigation-arrows {
@@ -36,6 +40,11 @@ img {
   display: flex;
   justify-content: center;
   margin-top: -3rem;
+}
+
+.navigation-arrows:hover,
+.navigation-dots:hover {
+  cursor: pointer;
 }
 
 .material-symbols-outlined {
