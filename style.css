@@ -1,0 +1,43 @@
+body {
+  background-color: darkgrey;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.carousel {
+  background-color: rgb(0, 17, 65);
+  height: 20rem;
+  width: 100%;
+  margin-top: -2rem;
+  display: flex;
+  overflow: hidden;
+}
+
+img {
+  height: 20rem;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.navigation-arrows {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  position: relative;
+  top: 8rem;
+}
+
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+.material-symbols-outlined {
+  color: white;
+}
